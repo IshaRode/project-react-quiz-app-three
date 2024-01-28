@@ -45,7 +45,10 @@ function QuizComponent() {
 
   const handleQuit = () => {
     if (window.confirm("Are you sure you want to quit?")) {
-      window.location.reload(false);
+      setNumber(0);
+      setScore(0);
+      setAttempted([]);
+      navigate("/Quiz");
     }
   };
 
